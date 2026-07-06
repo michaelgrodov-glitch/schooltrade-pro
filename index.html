@@ -42,7 +42,13 @@
         #password{
           background:darkblue;
           -webkit-text-stroke:3px solid white;
-          border-radius:50%;
+          border-radius:16px;
+          box-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
+        }
+        button{
+          background:darkblue;
+          -webkit-text-stroke:3px solid white;
+          border-radius:16px;
           box-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
         }
   </style>
@@ -51,7 +57,7 @@
     <div id="gate">
       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/>
       <h1>please enter the password to enter</h1>
-      <input type="password" id="password"/><button onclick="reg">click</button>
+      <input type="password" id="password"/><button onclick="reg()">click</button>
     </div>
   </body>
 </html>
