@@ -66,12 +66,12 @@
         }
   </style>
     <script>
-      const b = document.querySelector('.b');
       function reg(){
+        const b = document.querySelector('.b');
         b.classList.add('animated-click');
         setTimeout(() => {
           b.classList.remove('animated-click');
-        }, 3000);
+        }, 400);
       }
     </script>
   </head>
@@ -86,7 +86,7 @@
     </div>
      <style>
     .animated-click {
-          animation: shrinkPulse 4s ease-out;
+          animation: shrinkPulse 0.3s ease-out;
         }
         @keyframes shrinkPulse {
           0% {
