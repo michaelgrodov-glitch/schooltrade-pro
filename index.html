@@ -65,7 +65,7 @@
           font-size: 30px; 
         }
         .animated-click {
-          animation: shrinkPulse 0.4s ease-out;
+          animation: shrinkPulse 4s ease-out;
         }
         @keyframes shrinkPulse {
           0% {
@@ -84,8 +84,8 @@
       function reg(){
         b.classList.add('animated-click');
         setTimeout(() => {
-          button.classList.remove('animated-click');
-        }, 400);
+          b.classList.remove('animated-click');
+        }, 3000);
       }
     </script>
   </head>
