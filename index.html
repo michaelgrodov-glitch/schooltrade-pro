@@ -64,16 +64,10 @@
           text-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
           font-size: 30px; 
         }
+        buttin:active{
+          transform:scale(0.9);
+        }
   </style>
-    <script>
-      function reg(){
-        const b = document.querySelector('#b');
-        b.classList.add('animated-click');
-        setTimeout(() => {
-          b.classList.remove('animated-click');
-        }, 300);
-      }
-    </script>
   </head>
   <body>
     <div id="gate">
@@ -84,21 +78,5 @@
     autocapitalize="off"
     spellcheck="false"/><button onclick="reg()" id="b">click</button>
     </div>
-     <style>
-    .animated-click {
-          animation: shrinkPulse 0.3s ease-out;
-        }
-        @keyframes shrinkPulse {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(0.6);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-  </style>
   </body>
 </html>
