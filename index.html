@@ -64,20 +64,6 @@
           text-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
           font-size: 30px; 
         }
-        .animated-click {
-          animation: shrinkPulse 4s ease-out;
-        }
-        @keyframes shrinkPulse {
-          0% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(0.6);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
   </style>
     <script>
       const b = document.querySelector('.b');
@@ -99,4 +85,20 @@
     spellcheck="false"/><button onclick="reg()" id="b">click</button>
     </div>
   </body>
+  <style>
+    .animated-click {
+          animation: shrinkPulse 4s ease-out;
+        }
+        @keyframes shrinkPulse {
+          0% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(0.6);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+  </style>
 </html>
