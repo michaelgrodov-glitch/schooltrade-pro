@@ -56,6 +56,7 @@
           box-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
           margin-top:15px;
           padding:0px 30px;
+          transition: transform 0.3s ease;
         }
         ::placeholder{
           color:#0f131c;
@@ -64,8 +65,9 @@
         }
   </style>
     <script>
+      const box = document.querySelector('.b');
       function reg(){
-        button.
+        b.style.trabsform='scale(0.5)';
       }
     </script>
   </head>
@@ -76,7 +78,7 @@
       <input type="password" placeholder="wellcome to schooltrade" id="password" autocomplete="off"
     autocorrect="off"
     autocapitalize="off"
-    spellcheck="false"/><button onclick="reg()">click</button>
+    spellcheck="false"/><button onclick="reg()" id="b">click</button>
     </div>
   </body>
 </html>
