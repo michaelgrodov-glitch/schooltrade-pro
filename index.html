@@ -47,11 +47,15 @@
         }
         button{
           background:darkblue;
-          color:black;
+          color:white;
           text-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
-          -webkit-text-stroke:3px solid white;
+          -webkit-text-stroke:3px white;
           border-radius:16px;
           box-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
+        }
+        ::placeholder{
+          color:darkblue;
+          text-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
         }
   </style>
   </head>
@@ -59,7 +63,7 @@
     <div id="gate">
       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/>
       <h1>please enter the password to enter</h1>
-      <input type="password" id="password" autocomplete="off"
+      <input type="password" placeholder"קבל את המספר מהמנהלת בית הספר שלך" id="password" autocomplete="off"
     autocorrect="off"
     autocapitalize="off"
     spellcheck="false"/><button onclick="reg()">click</button>
