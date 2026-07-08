@@ -76,7 +76,7 @@
           position: absolute;   
           top: 20px;     
           left: 20px;
-          width: 300px;
+          width: 900px;
           height: 40px; 
           display: flex;
           align-items: center;
@@ -106,10 +106,18 @@
           margin-top:25px;
         }
   </style>
+    <script>
+      function time(){
+        const now = new Date();
+        document.getElementById("time").innerHTML = now.toLocalTimeString();
+      }
+      setInterval(updateTime,1000);
+      updateTime();
+    </script>
   </head>
   <body>
     <div id="i">
-       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/><p>•Schooltrade-pro</p>
+       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/><p>•Schooltrade-pro</p><p id="time"></p>
     </div>
     <div id="gate">
       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/>
