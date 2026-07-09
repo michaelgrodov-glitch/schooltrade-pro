@@ -125,15 +125,19 @@
       }
   </style>
     <script>
-      window.onload = function () {
-        fetch("https://ipapi.co/json/")
-        .then(response => response.json())
-        .then(data => {
-         document.getElementById("country").textContent =
+     window.onload = function () {
+      fetch("https://ipapi.co/json/")
+      .then(response => response.json())
+      .then(data => {
+      document.getElementById("country").textContent =
          "country: " + data.country_flag_emoji + " " + data.country_name;
-         if (data.country_code != "IL") {
-         window.location.href = "onlyIsraelUsers.html";
+
+      if (data.country_code != "IL") {
+        window.location.href = "onlyIsraelUsers.html";
       }
+    })
+    .catch(error => {
+      console.log("Ошибка получения страны:", error);
     });
 };
       function time(){
