@@ -126,11 +126,13 @@
   </style>
     <script>
      window.onload = function () {
-      fetch("https://ipapi.co/json/")
+       setInterval(time,1000);
+       time();
+      fetch("https://ipwho.is/")
       .then(response => response.json())
       .then(data => {
       document.getElementById("country").textContent =
-         "country: " + data.country_flag_emoji + " " + data.country_name;
+         "country: " + data.flag.emoji + " " + data.country;
 
       if (data.country_code != "IL") {
         window.location.href = "onlyIsraelUsers.html";
@@ -144,8 +146,6 @@
         const now = new Date();
         document.getElementById("time").innerHTML = now.toLocaleDateString() + " | " + now.toLocaleTimeString();
       }
-      setInterval(time,1000);
-      time();
       function reg(){
         let login=document.getElementById("password").value;
         if(login === "367927369"){
