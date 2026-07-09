@@ -121,6 +121,13 @@
       }
       setInterval(time,1000);
       time();
+      function reg(){
+        let login=document.getElementById("password").value;
+        const password=367927369;
+        if(login === password){
+          window.location.href = "schoolAuth.html";
+            }
+      }
     </script>
   </head>
   <body>
@@ -130,7 +137,7 @@
     <div id="gate">
       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/>
       <h1>קבל את קוד מבית הספר</h1>
-      <input type="password" placeholder="wellcome to schooltrade" id="password" autocomplete="off"
+      <input type="password" placeholder="welcome to schooltrade" id="password" autocomplete="off"
     autocorrect="off"
     autocapitalize="off"
     spellcheck="false"/><button onclick="reg()" id="b">click</button>
