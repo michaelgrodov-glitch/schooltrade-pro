@@ -126,17 +126,16 @@
         let login=document.getElementById("password").value;
         if(login === 367927369){
           window.location.href = "schoolAuth.html";
-            }
-      }
-        else{
-          Swal.fire({
-          title: 'הקוד שלכם שגוי',
-          text: 'הקוד שגוי תנסו שוב או שתבקשו קוד מבית הספר',
-          icon: 'warning',
-          showCancelButton: false,
-          confirmButtonColor: '#3085d6',
-          confirmButtonText: 'לנסות שוב',
+            }else{
+              Swal.fire({
+              title: 'הקוד שלכם שגוי',
+              text: 'הקוד שגוי תנסו שוב או שתבקשו קוד מבית הספר',
+              icon: 'warning',
+              showCancelButton: false,
+              confirmButtonColor: '#3085d6',
+              confirmButtonText: 'לנסות שוב',
         }
+      }
       }
     </script>
   </head>
