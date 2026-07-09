@@ -129,14 +129,13 @@
         fetch("https://ipapi.co/json/")
         .then(response => response.json())
         .then(data => {
-        document.getElementById("country").textContent =
-        "country:"+""+ data.country_flag_emoji + " " + data.country_name;
-        if(data.country_code !="IL"){
-          window.location.href = "onlyIsraelUsers.html";)
-        }
-        }
-  );
-              }
+         document.getElementById("country").textContent =
+         "country: " + data.country_flag_emoji + " " + data.country_name;
+         if (data.country_code != "IL") {
+         window.location.href = "onlyIsraelUsers.html";
+      }
+    });
+};
       function time(){
         const now = new Date();
         document.getElementById("time").innerHTML = now.toLocaleDateString() + " | " + now.toLocaleTimeString();
