@@ -69,6 +69,21 @@
           transition: transform 0.3s ease;
           display: inline-block;
           width:300px;
+          opacity: 0;
+          visibility: hidden;
+          height: 0;
+          padding: 0;
+          margin-top: 0;
+          overflow: hidden;
+          border: none;
+        }
+      button.active {
+          opacity: 1;
+          visibility: visible;
+          height: auto;
+          padding: 0px 30px;
+          margin-top: 15px;
+          border: 2px solid white;
         }
         ::placeholder{
           color:#0f131c;
@@ -149,6 +164,15 @@
       console.log("Ошибка получения страны:", error);
     });
 };
+      const p = document.getElementById("password");
+      const ab = document.getElementById("b");
+      p.addEventListener("input",function(){
+        if (p.value.length === 6){
+          ab.classList.add("active");
+        }else{
+          ab.classList.remove("active");
+        }
+      )};
       function time(){
         const now = new Date();
         document.getElementById("time").innerHTML = now.toLocaleDateString() + " | " + now.toLocaleTimeString();
