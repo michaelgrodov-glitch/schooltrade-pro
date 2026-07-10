@@ -23,7 +23,7 @@
           color:#ffffff;
         }
     #gate{
-      background:#0f131c;
+      background: rgba(15, 19, 28, 0.65);
       padding:40px 32px;
       width:100%;
       max-width:440px;
@@ -87,6 +87,7 @@
           box-shadow: 0 0 10px white, 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
           cursor: pointer;
           pointer-events: auto;
+          opacity:1;
         }
         ::placeholder{
           color:#0f131c;
@@ -135,12 +136,23 @@
           margin-left:auto;
           margin-right:5px;
         }
+        body.swal2-shown {
+          overflow: auto !important;
+        }
         .swal2-container {
           z-index: 999999 !important;
           pointer-events: auto !important;
         }
         .swal2-popup {
           pointer-events: auto !important;
+        }
+        .swal2-actions {
+          z-index: 1000000 !important;
+          pointer-events: auto !important;
+        }
+        .swal2-confirm {
+          pointer-events: auto !important;
+          cursor: pointer !important;
         }
       #country{
           width: auto;
