@@ -147,8 +147,6 @@
       }
   </style>
     <script>
-     let p;
-     let ab;
      window.onload = function () {
        setInterval(time,1000);
        time();
@@ -165,8 +163,7 @@
     .catch(error => {
       console.log("Ошибка получения страны:", error);
     });
-};
-      const p = document.getElementById("password");
+       const p = document.getElementById("password");
       const ab = document.getElementById("b");
       p.addEventListener("input",function(){
         if (p.value.length === 9){
@@ -175,6 +172,7 @@
           ab.classList.remove("active");
         }
       });
+};
       function time(){
         const now = new Date();
         document.getElementById("time").innerHTML = now.toLocaleDateString() + " | " + now.toLocaleTimeString();
