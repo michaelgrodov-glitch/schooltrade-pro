@@ -150,8 +150,6 @@
      window.onload = function () {
        setInterval(time,1000);
        time();
-       const p = document.getElementById("password");
-      const ab = document.getElementById("b");
       fetch("https://ipwho.is/")
       .then(response => response.json())
       .then(data => {
@@ -166,6 +164,8 @@
       console.log("Ошибка получения страны:", error);
     });
 };
+      const p = document.getElementById("password");
+      const ab = document.getElementById("b");
       p.addEventListener("input",function(){
         if (p.value.length === 9){
           ab.classList.add("active");
