@@ -7,7 +7,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body{
-          
           font-family: 'Inter', sans-serif;
           display:flex;
           justify-content: center;
@@ -62,8 +61,8 @@
           font-style:italic;
         }
         #password{
-          background:darkblue;
-          font-family:italic;
+          background:rgba(15, 19, 28, 0.65);
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           border-radius:16px;
           //box-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;
           font-size:30px;
@@ -74,6 +73,9 @@
           outline: none;  
           transition: border-color 2s ease, box-shadow 2s ease;
           border: 2px solid transparent;
+          backdrop-filter: blur(10px); 
+          -webkit-backdrop-filter: blur(10px);
+          font-weight:bold;
          }
       #password:focus{
          border: 2px solid blue;
