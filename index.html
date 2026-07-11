@@ -120,12 +120,11 @@
           background-size: 100% 100%;
         }
         ::placeholder{
-          color:#0f131c;
-          -webkit-text-stroke:1px white;
+          color:white;
           letter-spacing: 3px;
           display: block;
           width: 100%;
-          font-size: 25px; 
+          font-size: 20px; 
         }
         button:active{
           transform:scale(0.9);
@@ -134,7 +133,7 @@
           position: absolute;   
           top: 20px;     
           left: 20px;
-          width: 1400px;
+          min-width: 1400px;
           height: 40px; 
           display: flex;
           align-items: center;
@@ -233,7 +232,7 @@
             }else{
               Swal.fire({
               title: 'הקוד שלכם שגוי',
-              text: 'הקוד שגוי תנסו שוב או שתבקשו קוד מבית הספר',
+              text: 'הקוד שגוי. אנא נסה שוב או בקש קוד מבית הספר',
               icon: 'error',
               showCancelButton: false,
               confirmButtonColor: '#3085d6',
@@ -250,7 +249,7 @@
     <div id="gate">
       <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/>
       <h1>קבל את הקוד מבית הספר</h1>
-      <input type="password" placeholder=":הזן את הקוד בית הספר שלך" id="password" autocomplete="off"
+      <input type="password" placeholder=":הקוד של בית הספר שלך" id="password" autocomplete="off"
     autocorrect="off"
     autocapitalize="off"
     spellcheck="false"/>
