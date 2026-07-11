@@ -7,13 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body{
-          background-image:url("https://cdn.leonardo.ai/users/2ac21151-35b0-4045-9ca0-3d5f31eeb684/generations/1f17c94a-0d1e-63f0-a598-a8efc883859b/lucid-origin_Abstract_dark_tech_background_deep_navy_blue_and_dark_charcoal_geometric_canvas_-0.jpg");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          image-rendering: -webkit-optimize-contrast; /* Safari */
-          image-rendering: crisp-edges;  
+          
           font-family: 'Inter', sans-serif;
           display:flex;
           justify-content: center;
@@ -21,7 +15,26 @@
           min-height: 100vh;
           margin:0;
           color:#ffffff;
+          position: relative;
+          overflow: hidden;
         }
+  body::before{
+    background-image:url("https://cdn.leonardo.ai/users/2ac21151-35b0-4045-9ca0-3d5f31eeb684/generations/1f17c94a-0d1e-63f0-a598-a8efc883859b/lucid-origin_Abstract_dark_tech_background_deep_navy_blue_and_dark_charcoal_geometric_canvas_-0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: -webkit-optimize-contrast; /* Safari */
+    image-rendering: crisp-edges;  
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    filter: brightness(1.35) contrast(1.15) saturate(1.25);
+    z-index:-1;
+}
     #gate{
       background: rgba(15, 19, 28, 0.65);
       padding:40px 32px;
