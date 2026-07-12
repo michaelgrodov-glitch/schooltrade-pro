@@ -21,7 +21,7 @@
           overflow:scroll;
         }
   body::before{
-    /*background-image:url("myimageupscaler_quick_schooltradel3.webp");
+    background-image:url("myimageupscaler_quick_schooltradel3.webp");
     background-size: cover;
     background-position: center -80px;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
     image-rendering: crisp-edges;  
     image-rendering: -webkit-optimize-contrast; 
     image-rendering: crisp-edges; 
-    image-rendering: pixelated;*/
+    image-rendering: pixelated;
     content:"";
     position:fixed;
     top:0;
@@ -39,11 +39,11 @@
     height:100%;
     z-index:-1;
 }
-      s3{
-        size: 400px;
-        position: center -80px;
-        repeat: no-repeat;
-        attachment: fixed;
+      body::before{
+        background-size:90%;
+        background-position: center -80px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
       }
    @media (max-width: 768px){
       s3{
@@ -276,7 +276,6 @@
     </script>
   </head>
   <body>
-    <img id="s3" src="myimageupscaler_quick_schooltradel3.webp"></img>
     <h1>שוק קניות לבית הספר</h1>
     <div id="i">
        <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/><p>•Schooltrade-pro</p><p id="country"></p><p id="time"></p>
