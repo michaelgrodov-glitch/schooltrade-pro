@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>schooltrade3</title>
     <link rel="icon" type="image/png" href="https://github.com/michaelgrodov-glitch/schooltrade-pro/blob/main/logo-modified.png?raw=true">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -51,6 +52,10 @@
       margin-top:500px ; 
       /*backdrop-filter: blur(10px); 
       -webkit-backdrop-filter: blur(10px);*/
+      width:min(90%,600px);
+      padding:30px;
+      margin:120px auto 30px;
+      box-sizing:border-box;
     }
     /*#gate img{
       width:100px;
@@ -149,6 +154,17 @@
           box-shadow:0 20px 25px -5px rgba(0,0,0,0.3),0 10px 10px -5px rgba(0, 0, 0, 0.2);
           line-height: 40px;
           z-index:1;
+          position:fixed;
+          top:15px;
+          left:15px;
+          right:15px;
+          width:auto;
+          min-width:0;
+          display:flex;
+          align-items:center;
+          gap:10px;
+          padding:8px 12px;
+          box-sizing:border-box;
         }
         #i img {
         height: 100%;
