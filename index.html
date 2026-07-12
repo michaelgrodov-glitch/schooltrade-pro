@@ -21,7 +21,7 @@
           overflow:scroll;
         }
   body::before{
-    background-image:url("myimageupscaler_quick_schooltradel3.webp");
+    /*background-image:url("myimageupscaler_quick_schooltradel3.webp");
     background-size: cover;
     background-position: center -80px;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
     image-rendering: crisp-edges;  
     image-rendering: -webkit-optimize-contrast; 
     image-rendering: crisp-edges; 
-    image-rendering: pixelated;
+    image-rendering: pixelated;*/
     content:"";
     position:fixed;
     top:0;
@@ -39,6 +39,12 @@
     height:100%;
     z-index:-1;
 }
+      s3{
+        size: cover;
+        position: center -80px;
+        repeat: no-repeat;
+        attachment: fixed;
+      }
    @media (max-width: 768px){
       body::before{
         background-size: 90% auto !important; 
@@ -118,7 +124,7 @@
           opacity: 0.3;
         }
       #gate button.active {
-          background-image:url("https://cdn.leonardo.ai/users/2ac21151-35b0-4045-9ca0-3d5f31eeb684/generations/1f17c94a-0d1e-63f0-a598-a8efc883859b/lucid-origin_Abstract_dark_tech_background_deep_navy_blue_and_dark_charcoal_geometric_canvas_-0.jpg");
+          /*background-image:url("https://cdn.leonardo.ai/users/2ac21151-35b0-4045-9ca0-3d5f31eeb684/generations/1f17c94a-0d1e-63f0-a598-a8efc883859b/lucid-origin_Abstract_dark_tech_background_deep_navy_blue_and_dark_charcoal_geometric_canvas_-0.jpg")*/;
           color: white;
           text-shadow: 0 0 10px white, 0 0 20px blue, 0 0 40px blue, 0 0 80px blue;
           border: 2px solid white;
@@ -270,6 +276,7 @@
     </script>
   </head>
   <body>
+    <img id="s3" src="myimageupscaler_quick_schooltradel3.webp"></img>
     <h1>שוק קניות לבית הספר</h1>
     <div id="i">
        <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/><p>•Schooltrade-pro</p><p id="country"></p><p id="time"></p>
