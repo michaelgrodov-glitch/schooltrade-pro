@@ -53,7 +53,7 @@
         font-size:34px;
         margin:300px 0 30px;
         font-size:40px !important;
-        margin-top:100px !important;
+        margin-top:200px !important;
      }
 }
     #gate{
@@ -240,6 +240,22 @@
         position: relative;
         z-index: 1;
       }
+      @media screen and (orientation: landscape) and (max-height: 500px) {
+    body{
+        overflow-y: auto;
+    }
+    #gate{
+        margin: 30px auto;
+    }
+    #hh{
+        margin-top: 120px;
+        font-size: 28px;
+    }
+    body::before{
+        background-size: 500px auto;
+        background-position: center top;
+    }
+}
   </style>
     <script>
      window.onload = function () {
