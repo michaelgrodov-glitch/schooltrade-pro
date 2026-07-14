@@ -49,19 +49,18 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    size: 400px;
+    transform: translateX(-50%);
+    width: 420px;
+    max-width:80vw;
+    height: auto;
     position: center -80px;
-    repeat: no-repeat;
-    attachment: fixed;
     z-index:-1;
     pointer-events: none;
 }
    @media (max-width: 768px){
       #background{
-        background-size: 1000px auto !important;
-        background-position: center -50px !important;
+        width: 280px;
+        top: 70px;
   }
      body{
        display:block;
