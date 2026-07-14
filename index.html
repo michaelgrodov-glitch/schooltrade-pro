@@ -24,7 +24,7 @@
           height: 100dvh;
           max-height: 100dvh;
         }
-  body::before{
+  #background{
     background-image:url("myimageupscaler_quick_schooltradel3.webp");
     background-size: 400px;
     background-position: center -80px;
@@ -46,7 +46,7 @@
     pointer-events: none;
 }
    @media (max-width: 768px){
-      body::before{
+      #background{
         background-attachment: fixed !important;
         background-size: 1000px auto !important;   
         background-position: center -50px !important;
@@ -293,7 +293,7 @@
         width:90%;
     }
 
-    body::before{
+    #background{
         background-size:330px;
         background-position:center 20px;
     }
@@ -369,6 +369,7 @@ if (window.visualViewport) {
     <div id="i">
        <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/><p>•Schooltrade-pro</p><p id="country"></p><p id="time"></p>
     </div>
+    <div id="background"></div>
     <div id="gate">
       <h2 id="pp">הזן את הקוד בית הספר שלך</h2>
       <p>קוד בין 9 ספרות</p>
