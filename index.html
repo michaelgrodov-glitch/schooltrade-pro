@@ -63,6 +63,16 @@
         margin-top:-30px;
         color: rgba(255,255,255,.72);
      }
+     #gate{
+        width:90%;
+        padding:30px 20px;
+        border-radius:22px;
+        margin:25px auto 0;
+     }
+        #gate .gate-row{
+          flex-direction:column;
+          gap:12px;
+    }
 }
     #gate{
       background:#16171b;
@@ -82,7 +92,21 @@
       padding:30px;
       margin:500px auto 30px;
       box-sizing:border-box;
+      width: min(95%, 1100px);
+      padding: 45px 55px;
+      border-radius: 28px;
+      background: rgba(24,24,28,.82);
+      border: 1px solid rgba(255,255,255,.06);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      margin: 40px auto 0;
+      box-shadow: 0 20px 60px rgba(0,0,0,.45);
     }
+      #gate .gate-row{
+       display:flex;
+       gap:15px;
+       align-items:center;
+}
     /*#gate img{
       width:100px;
       border:2px solid white;
