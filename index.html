@@ -60,7 +60,7 @@
         text-align:center;
         line-height:1.5;
         margin: 0 auto;
-        margin-top:-10px;
+        margin-top:-40px;
         color: rgba(255,255,255,.72);
      }
 }
@@ -249,20 +249,26 @@
         z-index: 1;
       }
       @media screen and (orientation: landscape) and (max-height: 500px) {
-    body{
-        overflow-y: auto;
+        #hh{
+        margin-top:90px;
+        font-size:34px;
     }
+
+    p{
+        max-width:420px;
+        font-size:18px;
+    }
+
     #gate{
-        margin: 30px auto;
+        margin-top:25px;
+        width:90%;
     }
-    #hh{
-        margin-top: 120px;
-        font-size: 28px;
-    }
+
     body::before{
-        background-size: 500px auto;
-        background-position: center top;
+        background-size:330px;
+        background-position:center 20px;
     }
+
 }
   </style>
     <script>
