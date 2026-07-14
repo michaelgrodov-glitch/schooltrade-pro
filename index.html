@@ -301,7 +301,6 @@
      window.onload = function () {
        setInterval(time,1000);
        time();
-       document.body.style.height = '100dvh';
       fetch("https://ipwho.is/")
       .then(response => response.json())
       .then(data => {
