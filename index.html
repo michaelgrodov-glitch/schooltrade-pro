@@ -17,7 +17,7 @@
           margin:0;
           color:#ffffff;
           position: relative;
-          overflow: hidden;
+          overflow-x: hidden;
           background-color:#101318;
           direction: rtl;
           overflow-y: auto;
@@ -46,11 +46,12 @@
     pointer-events: none;
 }*/
    #background {
+       position:fixed;
        top: 0;
        left: 0;
        transform: translateX(-50%);
        width: 900px;
-       max-width:80vw;
+       max-width:90vw;
        height: auto;
        z-index:-1;
        pointer-events: none;
@@ -60,12 +61,11 @@
 }
    @media (max-width: 768px){
       #background{
-        width: 17000px;    
+        width: 80vw;    
         max-width: 95vw;   
         left: 50%;
         transform: translateX(-50%);
         top: 40px;
-        position: fixed;
   }
      body{
        display:block;
