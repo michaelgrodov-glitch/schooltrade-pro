@@ -20,7 +20,7 @@
           overflow: hidden;
           background-color:#101318;
           direction: rtl;
-          overflow: scrolen;
+          overflow-y: auto;
         }
   body::before{
     background-image:url("myimageupscaler_quick_schooltradel3.webp");
@@ -40,15 +40,18 @@
     width:100%;
     height:100%;
     z-index:-1;
+    overflow-y: auto;
 }
    @media (max-width: 768px){
       body::before{
         background-attachment: fixed !important;
         background-size: 1000px auto !important;   
         background-position: center -50px !important;
+        overflow-y: auto;
   }
      body{
        display:block;
+       overflow-y: auto;
      }
      #hh{
          margin-top:300px !important;
@@ -104,10 +107,9 @@
       box-shadow: 0 20px 60px rgba(0,0,0,.45);
     }
       #gate .gate-row{
-       display:flex;
-       gap:15px;
-       align-items:center;
-}
+          flex-direction:column;
+          gap:12px;
+    }
     /*#gate img{
       width:100px;
       border:2px solid white;
