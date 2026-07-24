@@ -50,6 +50,7 @@
        display:flex;
        justify-content:center;
        margin-top:-565px;
+       z-index: 1;
      }
      body{
        display:block;
@@ -71,12 +72,13 @@
      #gate{
          width: min(90%, 700px);
          max-width: 700px;
-         margin: -100px auto 50px;
+         margin:50px auto;
          padding: 40px 30px;
          border-radius: 28px;
          background: rgba(24,24,28,.82);
          border: 1px solid rgba(255,255,255,.06);
          box-sizing: border-box;
+         z-index: 2;
      }
      #gate input{
         width: calc(100% - 220px);
@@ -360,15 +362,6 @@ if (window.visualViewport) {
     </script>
   </head>
   <body>
-        <div id="gate">
-      <h2 id="pp">הזן את הקוד בית הספר שלך</h2>
-      <p>קוד בין 9 ספרות</p>
-      <input type="password" placeholder="000-000-000" id="password" autocomplete="off"
-    autocorrect="off"
-    autocapitalize="off"
-    spellcheck="false"/>
-      <button onclick="reg()" id="b">המשך</button>
-    </div>
     <h3 id="hh">שוק קניות לבית הספר</h3>
     <div id="i">
        <img src="https://raw.githubusercontent.com/michaelgrodov-glitch/schooltrade-pro/main/logo.JPG" alt="logo"/><p>•Schooltrade-pro</p><p id="country"></p><p id="time"></p>
@@ -377,5 +370,14 @@ if (window.visualViewport) {
     <img id="background" src="myimageupscaler_quick_schooltradel3.webp"/>
     </div>
     <p>מכירה, קנייה והחלפה של ציוד ספרים בין תלמידים בבית ספר שלך</p>
+            <div id="gate">
+      <h2 id="pp">הזן את הקוד בית הספר שלך</h2>
+      <p>קוד בין 9 ספרות</p>
+      <input type="password" placeholder="000-000-000" id="password" autocomplete="off"
+    autocorrect="off"
+    autocapitalize="off"
+    spellcheck="false"/>
+      <button onclick="reg()" id="b">המשך</button>
+    </div>
   </body>
 </html>
