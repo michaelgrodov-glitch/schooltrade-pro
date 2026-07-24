@@ -77,12 +77,13 @@
   }
 
   #pp {
-    font-size: 27px;
+    font-size: 23px;
+    margin-top:-40px;
   }
 
   #password{
     width: 60%;
-    height: 62px;
+    height: 42px;
     font-size: 24px;
     margin-left:80px;
     margin-top:100px;
@@ -126,7 +127,7 @@
           font-style:italic;
         }
         #password{
-          background:rgba(15, 19, 28, 0.65);
+          background: #111318;
           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           border-radius:5px;
           /*box-shadow:0 0 10px white,0 0 20px blue,0 0 40px blue,0 0 80px blue;*/
@@ -137,16 +138,8 @@
           outline: none;  
           transition: border-color 2s ease, box-shadow 2s ease;
           background: rgba(255, 255, 255, 0.07) !important; 
-          backdrop-filter: blur(4px) !important; 
-          -webkit-backdrop-filter: blur(4px) !important;
-          border: 1px solid rgba(255, 255, 255, 0.2) !important;
+          border: 1px solid #2C313C !important;
          }
-      #password:focus{
-         border: 2px solid blue;
-         box-shadow: 0 0 15px white, 
-         0 0 25px blue, 
-         0 0 45px blue;
-      }
         #gate button{
           background-image:url("https://cdn.leonardo.ai/users/2ac21151-35b0-4045-9ca0-3d5f31eeb684/generations/1f17c94a-0d1e-63f0-a598-a8efc883859b/lucid-origin_Abstract_dark_tech_background_deep_navy_blue_and_dark_charcoal_geometric_canvas_-0.jpg");
           color: #94a3b8;
@@ -185,9 +178,9 @@
           background-size: 100% 100%;
         }
         ::placeholder{
-          color:white;
+          color: rgba(255, 255, 255, 0.35);
+          opacity: 1;
           letter-spacing: 3px;
-          display: block;
           width: 100%;
           font-size: 20px; 
           font-weight:bold;
