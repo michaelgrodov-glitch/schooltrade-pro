@@ -34,7 +34,9 @@
 }
    @media (max-width: 768px){
       #background{
-        width: 140vh;
+        /*width: 140vh;*/
+        width: 100%;
+        max-width: 900px;
         height: auto;
         margin: 60px auto 40px;  
         pointer-events: none;
@@ -56,7 +58,8 @@
        display:block;
      }
      #hh{
-         margin-top:320px !important;
+         /*margin-top:320px !important;*/
+         padding-top: 10vh;
          margin-bottom:18px;
          font-size:40px !important;
      }
@@ -85,7 +88,11 @@
     width: 60%;
     height: 42px;
     font-size: 24px;
-    margin-left:80px;
+    /*margin-left:80px;*/
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto 0;
+    display: block;
     margin-top:100px;
   }
 
@@ -153,7 +160,9 @@
           transition: all 0.3s ease;
           transition: transform 2s ease;
           display: inline-block;
-          width:300px;
+          /*width:300px;*/
+          width: 100%;
+          max-width: 400px;
           text-shadow:none;
           box-shadow:none;
           cursor: not-allowed;
@@ -267,7 +276,7 @@
         text-align: center;
         display: block;
         margin: 380px auto 30px;
-        font-size: 56px;
+        font-size: clamp(32px, 6vw, 56px);
         font-weight: 700;
         position: relative;
         z-index: 1;
