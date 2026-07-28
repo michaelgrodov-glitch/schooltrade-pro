@@ -72,7 +72,7 @@
      #gate {
        width: calc(100% - 1px);
        margin: 11.682vh auto 11.682vw;
-       padding: 16.355vh 4.673vw;
+       padding:clamp(32px,5vw,40px) 20px;
        border-radius:15px;
   }
      #gate p{
@@ -85,10 +85,11 @@
 
   #password{
     width: 60%;
-    height: 14.019vh;
+    height: clamp(56px, 8vw, 64px);
     font-size: clamp(12px, calc(10.909px + 0.341vw), 15px);
-    margin-left:21.028vw;
-    margin-top:16.355vh;
+    margin:20px auto 0;
+    display:block;
+    margin-top:20px;
     color:white;
   }
   ::placeholder{
@@ -96,8 +97,8 @@
   }
 
   #b{
-    width: 20%;
-    height: 11.682vh;
+    width:130px;
+    height:64px;
     margin-top: 3.271vh;
     font-size:clamp(8px, calc(7.273px + 0.227vw), 10px);
   }
