@@ -45,13 +45,29 @@
         /*min-height: 65vh;   */
         max-height: 175vh;
   }
+         #one-container{
+            position: relative;
+            display: inline-block;
+}  
         #one{
                width:400px;
               box-sizing:border-box;
               object-fit: contain;
               margin-right:20px;
               margin-top:-300px;
+              display: block;
          }
+         #one-container::after{
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+          to bottom,
+          transparent 40%;
+           #14151a 100%
+    );
+    pointer-events: none;
+}
      #img{
        width:100%;
        overflow:hidden;
