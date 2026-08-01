@@ -337,7 +337,7 @@
       document.getElementById("country").textContent =
          "country: " + data.flag.emoji + " " + data.country;
 
-      if (data.country_code === "IL") {
+      if (data.country_code != "IL") {
         window.location.href = "onlyIsraelUsers.html";
       }
     })
