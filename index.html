@@ -337,13 +337,14 @@
       document.getElementById("country").textContent =
          "country: " + data.flag.emoji + " " + data.country;
 
-      if (data.country_code != "IL") {
+      if (data.country_code === "IL") {
         window.location.href = "onlyIsraelUsers.html";
       }
     })
     .catch(error => {
       console.log("Ошибка получения страны:", error);
     });
+           };
      /*  const p = document.getElementById("password");
       const ab = document.getElementById("b");
       p.addEventListener("input",function(){
