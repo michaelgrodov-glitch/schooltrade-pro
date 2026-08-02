@@ -365,16 +365,21 @@
       console.log("Ошибка получения страны:", error);
     });
            };
-     /*  const p = document.getElementById("password");
+       const p = document.getElementById("password");
       const ab = document.getElementById("b");
       p.addEventListener("input",function(){
-        if (p.value.length === 9){
-          ab.classList.add("active");
-        }else{
-          ab.classList.remove("active");
+        if (p.value.length === 0){
+                        Swal.fire({
+              title: 'בבקשה תכתבו משהוא ליפני שלשלוח',
+              text: 'לא כתבתם משהוא ליפני שליחה ',
+              icon: 'warning',
+              showCancelButton: false,
+              confirmButtonColor: '#3085d6',
+              confirmButtonText: 'לנסות שוב',
+        });
         }
       });
-};*/
+};
       /*function time(){
         const now = new Date();
         document.getElementById("time").innerHTML = now.toLocaleDateString() + " | " + now.toLocaleTimeString();
