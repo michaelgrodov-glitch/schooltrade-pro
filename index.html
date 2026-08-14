@@ -450,6 +450,18 @@ if (window.visualViewport) {
         }
     });
 }*/
+          document.addEventListener("DOMContentLoaded", () => {
+    const intro = document.getElementById("intro");
+    const video = document.getElementById("introVideo");
+
+    video.addEventListener("ended", () => {
+        intro.classList.add("hide");
+
+        setTimeout(() => {
+            intro.remove();
+        }, 1500);
+    });
+});
     </script>
   </head>
   <body>
