@@ -761,24 +761,27 @@ if (window.visualViewport) {
         }
     });
 }*/
-          document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     const intro = document.getElementById("intro");
     const video = document.getElementById("introVideo");
-
-    video.addEventListener("ended", () => {
-        intro.classList.add("hide");
-
-        setTimeout(() => {
-            intro.remove();
-        }, 1500);
-    });
+    if (window.innerWidth <= 768) {
+        video.src = "нет_видное_не_имеет_отношения.mp4";
+        video.play();
+        video.addEventListener("ended", () => {
+            intro.classList.add("hide");
+            setTimeout(() => {
+                intro.remove();
+            }, 1500);
+        });
+    } else {
+        intro.remove();
+    }
 });
     </script>
   </head>
   <body>
         <div id="intro">
     <video id="introVideo" autoplay muted playsinline>
-        <source src="нет_видное_не_имеет_отношения.mp4" type="video/mp4">
     </video>
 </div>
     <div id="i">
